@@ -71,7 +71,7 @@ a {
 }
 
   a:hover {
-    color: #E27689;
+    color: #FF6F59;
     border-bottom-color: rgba(255, 255, 255, 0);
   }
 
@@ -104,4 +104,11 @@ p, ul, ol, dl, table {
 
 br.clear {
   clear: both;
+}
+
+section div ul {
+  text-align: left;
+}
+section div li {
+  list-style-type: none;
 }
