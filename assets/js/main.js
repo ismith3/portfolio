@@ -103,7 +103,13 @@
 			$(
 				'<div id="headerToggle">' +
 					'<a href="#header" class="toggle"></a>' +
-				'</div>'
+				'</div>' +
+					'<ul id="navbar">' +
+						'<li><a href="#top" id="top-link"><span class="icon fa-home">Intro</span></a></li>' +
+						'<li><a href="#portfolio" id="portfolio-link"><span class="icon fa-th">Portfolio</span></a></li>' +
+						'<li><a href="#about" id="about-link"><span class="icon fa-user">About Me</span></a></li>' +
+						'<li><a href="#contact" id="contact-link"><span class="icon fa-envelope">Contact</span></a></li>' +
+					'</ul>'
 			)
 				.appendTo($body);
 

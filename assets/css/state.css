@@ -227,28 +227,30 @@
         border: 0;
       }
 
-        #headerToggle .toggle:before {
-          font-family: FontAwesome;
-          text-decoration: none;
-          font-style: normal;
-          font-weight: normal;
-          -webkit-font-smoothing: antialiased;
-          -moz-osx-font-smoothing: grayscale;
-          content: '\f0c9';
-          color: #fff;
-          font-size: 18px;
-          line-height: 2.25em;
-          background: rgba(128, 136, 144, 0.5);
-          border-radius: 0.35em;
-          text-align: center;
-          position: absolute;
-          left: 0.5em;
-          top: 0.5em;
-          display: block;
-          width: 3.25em;
-          height: 2.25em;
-          line-height: 2.25em;
-        }
+      #navbar {
+        list-style-type: none;
+        width: 100vw;
+        display: inline-block;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        background: #222729;
+        left: 0;
+        position: fixed;
+        top: 0;
+        z-index: 10001;
+        text-align: center;
+      }
+
+      #navbar li {
+        display: inline-block;
+        color: #999;
+        margin: 5px 30px;
+      }
+      
+      #navbar li a span:before {
+        padding-right: 10px;
+      }
 
     body.header-visible #main {
       -moz-transform: translateX(275px);
@@ -343,6 +345,32 @@
         padding: 0 1em;
       }
 
+      #headerToggle .toggle:before {
+        font-family: FontAwesome;
+        text-decoration: none;
+        font-style: normal;
+        font-weight: normal;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        content: '\f0c9';
+        color: #fff;
+        font-size: 18px;
+        line-height: 2.25em;
+        background: rgba(128, 136, 144, 0.5);
+        border-radius: 0.35em;
+        text-align: center;
+        position: absolute;
+        left: 0.5em;
+        top: 0.5em;
+        display: block;
+        width: 3.25em;
+        height: 2.25em;
+        line-height: 2.25em;
+      }
+
+      #navbar {
+        display: none;
+      }
   /* Footer */
 
     #footer .copyright li {
